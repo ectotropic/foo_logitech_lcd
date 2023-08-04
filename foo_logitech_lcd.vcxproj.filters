@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Component">
+      <UniqueIdentifier>{a360b9b1-24cb-48d0-93f9-633aa970ffc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Visualisation">
+      <UniqueIdentifier>{151b8415-e8f6-4de9-ab80-ec559b72a6d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GL">
+      <UniqueIdentifier>{f6103cc8-44c3-4d70-97dc-c53d1e825877}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces">
+      <UniqueIdentifier>{703eea24-e220-4887-8441-7bd64fc322ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\foobar">
+      <UniqueIdentifier>{cd0f6cf4-e2c6-4fe5-b10b-27daa94864d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\foobar\Config">
+      <UniqueIdentifier>{a1ed4696-1bf7-4bbd-b1b4-aff8bb787baf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows">
+      <UniqueIdentifier>{8ce73a23-6f62-4778-b836-56c88f548446}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Audio Data">
+      <UniqueIdentifier>{0939bf85-b888-42f5-831b-adc63e53c60c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Audio Data\Interpolated">
+      <UniqueIdentifier>{a6ae391f-6a4d-46f7-8c6a-1d35891658d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\LCD">
+      <UniqueIdentifier>{7b3b0c53-4352-4e04-abc2-f1fe09345e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Drawing">
+      <UniqueIdentifier>{87a33985-12c4-4119-8467-76f8cc59d5f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Drawing\Image">
+      <UniqueIdentifier>{52103cbe-bbcd-4643-a83e-2ce4da8cafac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\LCD\Logitech">
+      <UniqueIdentifier>{82f6215f-9a42-4547-8bf1-96120c804cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Visualisation\Oscilloscope">
+      <UniqueIdentifier>{ab179730-6799-4058-b6fa-b426bf403855}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Config">
+      <UniqueIdentifier>{603b9904-0139-40d1-8355-1a6a355075aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\Drawing\Debug">
+      <UniqueIdentifier>{78872936-e6f2-46fc-be08-7fc86bdaf0e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Visualisation\VU Meter">
+      <UniqueIdentifier>{e43842d8-fd10-477d-a2f9-61d61ecc5f37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Visualisation\Track Text">
+      <UniqueIdentifier>{b44d77a7-9ed3-426c-b905-71e85fa5cdc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Visualisation\Track Text\Components">
+      <UniqueIdentifier>{6f9baae9-e20f-4629-81cf-c1560ccc7df5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Visualisation\Track Text\Components\Text">
+      <UniqueIdentifier>{33f5a2ff-16ce-49a1-b516-cf05f556dca5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Visualisation\Spectrum Analyser">
+      <UniqueIdentifier>{571bee8b-a031-4dbd-bbc0-6ae64dcb7b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Visualisation\Track Text\Progress Bar">
+      <UniqueIdentifier>{7d4afa4d-7642-4d7b-80b2-034e16f47ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\foobar\Data">
+      <UniqueIdentifier>{2eb364c8-6843-4408-9860-6c9254777f50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\foobar\UI">
+      <UniqueIdentifier>{c414e473-93b4-4106-943d-4a9cfa3b5dc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\GDI">
+      <UniqueIdentifier>{58b93304-9fae-4144-852d-8e127090f8e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\UI">
+      <UniqueIdentifier>{126322cb-e415-4a0a-917d-5423301868d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\GDIPlus">
+      <UniqueIdentifier>{9028c473-3002-44ba-a24b-2edcd8113bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Windows\Thread">
+      <UniqueIdentifier>{6c6d93ee-856d-41c4-94da-fea15d43a680}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\foobar\Util">
+      <UniqueIdentifier>{32e7316a-04a6-4719-ad17-fe1855485959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\foobar\UI\Resources">
+      <UniqueIdentifier>{99dacceb-ea0a-40bd-b6ba-4f109982f404}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Interfaces\foobar\Audio Data Manager">
+      <UniqueIdentifier>{21fef539-6820-42ea-9d12-83743fb06934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{233c71b7-3813-484b-a0a8-1030f0a8e25e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Image_ImageLoader.cpp">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image_ImageData.cpp">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image_GDI.cpp">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image_OpenGL.cpp">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image_GDIPlus.cpp">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClCompile>
+    <ClCompile Include="logger.cpp">
+      <Filter>Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="Canvas.cpp">
+      <Filter>Interfaces\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="LCD\LogitechAPI.cpp">
+      <Filter>Interfaces\LCD\Logitech</Filter>
+    </ClCompile>
+    <ClCompile Include="LCD\LogitechLCD.cpp">
+      <Filter>Interfaces\LCD\Logitech</Filter>
+    </ClCompile>
+    <ClCompile Include="CanvasDebug.cpp">
+      <Filter>Interfaces\Drawing\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\Oscilloscope_Basic.cpp">
+      <Filter>Component\Visualisation\Oscilloscope</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\Oscilloscope_Radial.cpp">
+      <Filter>Component\Visualisation\Oscilloscope</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\SpectrumAnalyser_Basic.cpp">
+      <Filter>Component\Visualisation\Spectrum Analyser</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\SpectrumAnalyser_Block.cpp">
+      <Filter>Component\Visualisation\Spectrum Analyser</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\VUMeter_Basic.cpp">
+      <Filter>Component\Visualisation\VU Meter</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\VUMeter_Image.cpp">
+      <Filter>Component\Visualisation\VU Meter</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\SpectrumAnalyser.cpp">
+      <Filter>Component\Visualisation\Spectrum Analyser</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\Oscilloscope.cpp">
+      <Filter>Component\Visualisation\Oscilloscope</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\VUMeter.cpp">
+      <Filter>Component\Visualisation\VU Meter</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\TrackDetails.cpp">
+      <Filter>Component\Visualisation\Track Text</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\TrackDetails_Basic.cpp">
+      <Filter>Component\Visualisation\Track Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GDI_Drawable.cpp">
+      <Filter>Interfaces\Drawing</Filter>
+    </ClCompile>
+    <ClCompile Include="GDI_Scroller.cpp">
+      <Filter>Component\Visualisation\Track Text\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="GDI_Text.cpp">
+      <Filter>Component\Visualisation\Track Text\Components\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GDI_TextFragment.cpp">
+      <Filter>Component\Visualisation\Track Text\Components\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GDI_TextLine.cpp">
+      <Filter>Component\Visualisation\Track Text\Components\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="GDI_ProgressBar.cpp">
+      <Filter>Component\Visualisation\Track Text\Progress Bar</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\foo_logitech_lcd.cpp">
+      <Filter>Interfaces\foobar</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\foo_logitech_lcd_ui.cpp">
+      <Filter>Interfaces\foobar</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\GDI\GDI.cpp">
+      <Filter>Windows\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\GDI\GDI_Font.cpp">
+      <Filter>Windows\GDI</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\UI\UI.cpp">
+      <Filter>Windows\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Thread\Thread_Worker.cpp">
+      <Filter>Windows\Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Windows_MessageQueue.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Windows_Core.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Windows\Windows_Error.cpp">
+      <Filter>Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio_DataManager.cpp">
+      <Filter>Component\Audio Data</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\Config_Manager.cpp">
+      <Filter>Component\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\foobar_logo.cpp">
+      <Filter>Interfaces\foobar\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\Config\foobar_config_general.cpp">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\Config\foobar_config_manager.cpp">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\Config\foobar_config_oscilloscope.cpp">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\Config\foobar_config_spectrum_analyser.cpp">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\Config\foobar_config_track_details.cpp">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\Config\foobar_config_vu_meter.cpp">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\UI\foobar_pref_general.cpp">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\UI\foobar_pref_vis_oscilloscope.cpp">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\UI\foobar_pref_vis_spectrum_analyser.cpp">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\UI\foobar_pref_vis_track_details.cpp">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\UI\foobar_pref_vis_vu_meter.cpp">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\UI\foobar_pref_visualisation.cpp">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\UI\foobar_preferences.cpp">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="foobar\foobar_audio_data_manager.cpp">
+      <Filter>Interfaces\foobar\Audio Data Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Visualisation\Visualisation_Manager.cpp">
+      <Filter>Component\Visualisation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Windows\_config.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glcore.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Image_GDI.h">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image_OpenGL.h">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image_ImageLoader.h">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image_ImageData.h">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image_GDIPlus.h">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Interfaces\Drawing\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Canvas.hpp">
+      <Filter>Interfaces\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="LCD\LCD.h">
+      <Filter>Interfaces\LCD</Filter>
+    </ClInclude>
+    <ClInclude Include="LCD\LogitechAPI.h">
+      <Filter>Interfaces\LCD\Logitech</Filter>
+    </ClInclude>
+    <ClInclude Include="LCD\LogitechLCD.h">
+      <Filter>Interfaces\LCD\Logitech</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderCommon.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="CanvasDebug.hpp">
+      <Filter>Interfaces\Drawing\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\Visualisation.h">
+      <Filter>Component\Visualisation</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\Oscilloscope_Basic.h">
+      <Filter>Component\Visualisation\Oscilloscope</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\Oscilloscope_Radial.h">
+      <Filter>Component\Visualisation\Oscilloscope</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\Oscilloscope_Util.h">
+      <Filter>Component\Visualisation\Oscilloscope</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\SpectrumAnalyser_Basic.h">
+      <Filter>Component\Visualisation\Spectrum Analyser</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\SpectrumAnalyser_Block.h">
+      <Filter>Component\Visualisation\Spectrum Analyser</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\SpectrumAnalyser_Util.h">
+      <Filter>Component\Visualisation\Spectrum Analyser</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\VUMeter_Basic.h">
+      <Filter>Component\Visualisation\VU Meter</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\VUMeter_Image.h">
+      <Filter>Component\Visualisation\VU Meter</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\VUMeter_Util.h">
+      <Filter>Component\Visualisation\VU Meter</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\Visualisation_Params.h">
+      <Filter>Component\Visualisation</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\SpectrumAnalyser.h">
+      <Filter>Component\Visualisation\Spectrum Analyser</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\Oscilloscope.h">
+      <Filter>Component\Visualisation\Oscilloscope</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\VUMeter.h">
+      <Filter>Component\Visualisation\VU Meter</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\TrackDetails.h">
+      <Filter>Component\Visualisation\Track Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\TrackDetails_Basic.h">
+      <Filter>Component\Visualisation\Track Text</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config_General.h">
+      <Filter>Component\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config_Oscilloscope.h">
+      <Filter>Component\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config_TrackDetails.h">
+      <Filter>Component\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config_VUMeter.h">
+      <Filter>Component\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config_SpectrumAnalyser.h">
+      <Filter>Component\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="GDI_Drawable.h">
+      <Filter>Interfaces\Drawing</Filter>
+    </ClInclude>
+    <ClInclude Include="GDI_Scroller.h">
+      <Filter>Component\Visualisation\Track Text\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="GDI_Text.h">
+      <Filter>Component\Visualisation\Track Text\Components\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="GDI_TextFragment.h">
+      <Filter>Component\Visualisation\Track Text\Components\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="GDI_TextLine.h">
+      <Filter>Component\Visualisation\Track Text\Components\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="GDI_ProgressBar.h">
+      <Filter>Component\Visualisation\Track Text\Progress Bar</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config_Common.h">
+      <Filter>Component\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\GDI\GDI.h">
+      <Filter>Windows\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\GDI\GDI_Bitmap.h">
+      <Filter>Windows\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\GDI\GDI_Canvas.h">
+      <Filter>Windows\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\GDI\GDI_Util.h">
+      <Filter>Windows\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\GDI\GDI_Font.h">
+      <Filter>Windows\GDI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UI\ATL_ColorSwatch.h">
+      <Filter>Windows\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UI\ATL_DialogWindow.h">
+      <Filter>Windows\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UI\ATL_Window.h">
+      <Filter>Windows\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UI\Comm_Dialog.h">
+      <Filter>Windows\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UI\UI.h">
+      <Filter>Windows\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\GDIPlus\GDIPlus.h">
+      <Filter>Windows\GDIPlus</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Thread\Thread_CriticalSection.h">
+      <Filter>Windows\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Thread\Thread_Worker.h">
+      <Filter>Windows\Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UI\UI_WindowClass.h">
+      <Filter>Windows\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UI\UI_WMTimer.h">
+      <Filter>Windows\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Windows_MessageQueue.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="GDI_ProgressBar_Util.h">
+      <Filter>Component\Visualisation\Track Text\Progress Bar</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Windows_Core.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Windows_Error.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Windows_StopWatch.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Windows_TimerResolution.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Windows_Param.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio_DecibelData.h">
+      <Filter>Component\Audio Data\Interpolated</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio_DecibelData_Impl.h">
+      <Filter>Component\Audio Data\Interpolated</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio_SampleData_Util.h">
+      <Filter>Component\Audio Data\Interpolated</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio_DecibelData_Util.h">
+      <Filter>Component\Audio Data\Interpolated</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio_SampleData_Impl.h">
+      <Filter>Component\Audio Data\Interpolated</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio_SampleData.h">
+      <Filter>Component\Audio Data\Interpolated</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio_DataManager.h">
+      <Filter>Component\Audio Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config_Manager.h">
+      <Filter>Component\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\foobar_album_art_util.h">
+      <Filter>Interfaces\foobar\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\foobar_formatter_util.h">
+      <Filter>Interfaces\foobar\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\foobar_io_util.h">
+      <Filter>Interfaces\foobar\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\foobar_string_util.h">
+      <Filter>Interfaces\foobar\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\foobar_visualisation_util.h">
+      <Filter>Interfaces\foobar\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\foobar_core_util.h">
+      <Filter>Interfaces\foobar\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\Config\foobar_config_common.h">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\Config\foobar_config_general.h">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\Config\foobar_config_manager.h">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\Config\foobar_config_oscilloscope.h">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\Config\foobar_config_spectrum_analyser.h">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\Config\foobar_config_track_details.h">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\Config\foobar_config_vu_meter.h">
+      <Filter>Interfaces\foobar\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\UI\foobar_pref_general.h">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\UI\foobar_pref_vis_dlg.h">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\UI\foobar_pref_vis_oscilloscope.h">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\UI\foobar_pref_vis_spectrum_analyser.h">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\UI\foobar_pref_vis_track_details.h">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\UI\foobar_pref_vis_vu_meter.h">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\UI\foobar_pref_visualisation.h">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\UI\foobar_preferences.h">
+      <Filter>Interfaces\foobar\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\foobar_audio_data_manager.h">
+      <Filter>Interfaces\foobar\Audio Data Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\foobar_cached_metadata.h">
+      <Filter>Interfaces\foobar\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UI\ATL_EnumComboBox.h">
+      <Filter>Windows\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\UI\ATL_PreferencesDialog.h">
+      <Filter>Windows\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\UI\Resources\foo_logitech_lcd.h">
+      <Filter>Interfaces\foobar\UI\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="foobar\foobar_sdk.h">
+      <Filter>Interfaces\foobar</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonHeaders.h" />
+    <ClInclude Include="GL\glerror.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glcommon.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorCast.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorPacker.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorBlend.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorTraits.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glscopedutil.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glbuffer.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\gltexture.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\glget.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="GL\wglcore.h">
+      <Filter>GL</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\GDIPlus\GDIPlus_Bitmap.h">
+      <Filter>Windows\GDIPlus</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\GDIPlus\GDIPlus_Error.h">
+      <Filter>Windows\GDIPlus</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\FlagEnum.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\InterpolateUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\MemoryUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Random.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\ScopeExit.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\SequentialEnum.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Singleton.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\TrigCache.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\TypeTraits.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Windows\Windows_StringUtil.h">
+      <Filter>Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="Visualisation\Visualisation_Manager.h">
+      <Filter>Component\Visualisation</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.MD" />
+    <None Include="lgpl-2.1.lic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="foobar\UI\Resources\foo_logitech_lcd.rc">
+      <Filter>Interfaces\foobar\UI\Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

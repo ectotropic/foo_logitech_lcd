@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{B4C28C2F-2E5D-43BA-8D75-2B5AF570FA16}</ProjectGuid>
+    <RootNamespace>foo_logitech_lcd</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.33312.129</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <IncludePath>$(ProjectDir)dependencies\include;$(ProjectDir)dependencies\include\foobar2000;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)dependencies\lib\$(LibrariesArchitecture)\$(Configuration);$(ProjectDir)dependencies\lib\$(LibrariesArchitecture);$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(ProjectDir)dependencies\lib\$(LibrariesArchitecture)\$(Configuration);$(ProjectDir)dependencies\lib\$(LibrariesArchitecture);$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)dependencies\include;$(ProjectDir)dependencies\include\foobar2000;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)\</OutDir>
+    <IntDir>build\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Label="Vcpkg" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WINVER=0x0600;_DEBUG;DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_AFX_SECURE_NO_WARNINGS;_ATL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatAngleIncludeAsExternal>true</TreatAngleIncludeAsExternal>
+      <ExternalTemplatesDiagnostics>false</ExternalTemplatesDiagnostics>
+      <DisableAnalyzeExternal>true</DisableAnalyzeExternal>
+      <ExternalWarningLevel>Level1</ExternalWarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration />
+      <TargetMachine>MachineX86</TargetMachine>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>foobar2000_SDK.lib;foobar2000_sdk_helpers.lib;foobar2000_component_client.lib;pfc.lib;libPPUI.lib;shared-$(Platform).lib;glew32s.lib;lglcd.lib;Shlwapi.lib;Gdiplus.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WINVER=0x0600;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_AFX_SECURE_NO_WARNINGS;_ATL_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <TreatAngleIncludeAsExternal>true</TreatAngleIncludeAsExternal>
+      <ExternalTemplatesDiagnostics>false</ExternalTemplatesDiagnostics>
+      <DisableAnalyzeExternal>true</DisableAnalyzeExternal>
+      <ExternalWarningLevel>Level1</ExternalWarningLevel>
+      <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <OmitFramePointers>true</OmitFramePointers>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <TreatSpecificWarningsAsErrors>4715</TreatSpecificWarningsAsErrors>
+      <AdditionalOptions>/d2notypeopt %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalDependencies>foobar2000_SDK.lib;foobar2000_sdk_helpers.lib;foobar2000_component_client.lib;pfc.lib;libPPUI.lib;shared-$(Platform).lib;glew32s.lib;lglcd.lib;Shlwapi.lib;Gdiplus.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Audio_DataManager.cpp" />
+    <ClCompile Include="Canvas.cpp" />
+    <ClCompile Include="CanvasDebug.cpp" />
+    <ClCompile Include="Config\Config_Manager.cpp" />
+    <ClCompile Include="foobar\Config\foobar_config_general.cpp" />
+    <ClCompile Include="foobar\Config\foobar_config_manager.cpp" />
+    <ClCompile Include="foobar\Config\foobar_config_oscilloscope.cpp" />
+    <ClCompile Include="foobar\Config\foobar_config_spectrum_analyser.cpp" />
+    <ClCompile Include="foobar\Config\foobar_config_track_details.cpp" />
+    <ClCompile Include="foobar\Config\foobar_config_vu_meter.cpp" />
+    <ClCompile Include="foobar\foobar_audio_data_manager.cpp" />
+    <ClCompile Include="foobar\foobar_logo.cpp" />
+    <ClCompile Include="foobar\foo_logitech_lcd.cpp" />
+    <ClCompile Include="foobar\foo_logitech_lcd_ui.cpp" />
+    <ClCompile Include="foobar\UI\foobar_preferences.cpp" />
+    <ClCompile Include="foobar\UI\foobar_pref_general.cpp" />
+    <ClCompile Include="foobar\UI\foobar_pref_visualisation.cpp" />
+    <ClCompile Include="foobar\UI\foobar_pref_vis_oscilloscope.cpp" />
+    <ClCompile Include="foobar\UI\foobar_pref_vis_spectrum_analyser.cpp" />
+    <ClCompile Include="foobar\UI\foobar_pref_vis_track_details.cpp" />
+    <ClCompile Include="foobar\UI\foobar_pref_vis_vu_meter.cpp" />
+    <ClCompile Include="GDI_Drawable.cpp" />
+    <ClCompile Include="GDI_ProgressBar.cpp" />
+    <ClCompile Include="GDI_Scroller.cpp" />
+    <ClCompile Include="GDI_Text.cpp" />
+    <ClCompile Include="GDI_TextFragment.cpp" />
+    <ClCompile Include="GDI_TextLine.cpp" />
+    <ClCompile Include="Image_GDIPlus.cpp" />
+    <ClCompile Include="Image_ImageData.cpp" />
+    <ClCompile Include="Image_ImageLoader.cpp" />
+    <ClCompile Include="Image_GDI.cpp" />
+    <ClCompile Include="Image_OpenGL.cpp" />
+    <ClCompile Include="LCD\LogitechAPI.cpp" />
+    <ClCompile Include="LCD\LogitechLCD.cpp" />
+    <ClCompile Include="logger.cpp" />
+    <ClCompile Include="Visualisation\Oscilloscope.cpp" />
+    <ClCompile Include="Visualisation\Oscilloscope_Basic.cpp" />
+    <ClCompile Include="Visualisation\Oscilloscope_Radial.cpp" />
+    <ClCompile Include="Visualisation\SpectrumAnalyser.cpp" />
+    <ClCompile Include="Visualisation\SpectrumAnalyser_Basic.cpp" />
+    <ClCompile Include="Visualisation\SpectrumAnalyser_Block.cpp" />
+    <ClCompile Include="Visualisation\TrackDetails.cpp" />
+    <ClCompile Include="Visualisation\TrackDetails_Basic.cpp" />
+    <ClCompile Include="Visualisation\Visualisation_Manager.cpp" />
+    <ClCompile Include="Visualisation\VUMeter.cpp" />
+    <ClCompile Include="Visualisation\VUMeter_Basic.cpp" />
+    <ClCompile Include="Visualisation\VUMeter_Image.cpp" />
+    <ClCompile Include="Windows\GDI\GDI.cpp" />
+    <ClCompile Include="Windows\GDI\GDI_Font.cpp" />
+    <ClCompile Include="Windows\Thread\Thread_Worker.cpp" />
+    <ClCompile Include="Windows\UI\UI.cpp" />
+    <ClCompile Include="Windows\Windows_Core.cpp" />
+    <ClCompile Include="Windows\Windows_Error.cpp" />
+    <ClCompile Include="Windows\Windows_MessageQueue.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Audio_DataManager.h" />
+    <ClInclude Include="Audio_DecibelData.h" />
+    <ClInclude Include="Audio_DecibelData_Impl.h" />
+    <ClInclude Include="Audio_DecibelData_Util.h" />
+    <ClInclude Include="Audio_SampleData.h" />
+    <ClInclude Include="Audio_SampleData_Impl.h" />
+    <ClInclude Include="Audio_SampleData_Util.h" />
+    <ClInclude Include="Canvas.hpp" />
+    <ClInclude Include="CanvasDebug.hpp" />
+    <ClInclude Include="Color.h" />
+    <ClInclude Include="ColorBlend.h" />
+    <ClInclude Include="ColorCast.h" />
+    <ClInclude Include="ColorPacker.h" />
+    <ClInclude Include="ColorTraits.h" />
+    <ClInclude Include="CommonHeaders.h" />
+    <ClInclude Include="Config\Config_Common.h" />
+    <ClInclude Include="Config\Config_General.h" />
+    <ClInclude Include="Config\Config_Manager.h" />
+    <ClInclude Include="Config\Config_Oscilloscope.h" />
+    <ClInclude Include="Config\Config_SpectrumAnalyser.h" />
+    <ClInclude Include="Config\Config_TrackDetails.h" />
+    <ClInclude Include="Config\Config_VUMeter.h" />
+    <ClInclude Include="foobar\Config\foobar_config_common.h" />
+    <ClInclude Include="foobar\Config\foobar_config_general.h" />
+    <ClInclude Include="foobar\Config\foobar_config_manager.h" />
+    <ClInclude Include="foobar\Config\foobar_config_oscilloscope.h" />
+    <ClInclude Include="foobar\Config\foobar_config_spectrum_analyser.h" />
+    <ClInclude Include="foobar\Config\foobar_config_track_details.h" />
+    <ClInclude Include="foobar\Config\foobar_config_vu_meter.h" />
+    <ClInclude Include="foobar\foobar_album_art_util.h" />
+    <ClInclude Include="foobar\foobar_audio_data_manager.h" />
+    <ClInclude Include="foobar\foobar_cached_metadata.h" />
+    <ClInclude Include="foobar\foobar_core_util.h" />
+    <ClInclude Include="foobar\foobar_io_util.h" />
+    <ClInclude Include="foobar\foobar_formatter_util.h" />
+    <ClInclude Include="foobar\foobar_sdk.h" />
+    <ClInclude Include="foobar\foobar_string_util.h" />
+    <ClInclude Include="foobar\foobar_visualisation_util.h" />
+    <ClInclude Include="foobar\UI\foobar_preferences.h" />
+    <ClInclude Include="foobar\UI\foobar_pref_general.h" />
+    <ClInclude Include="foobar\UI\foobar_pref_visualisation.h" />
+    <ClInclude Include="foobar\UI\foobar_pref_vis_dlg.h" />
+    <ClInclude Include="foobar\UI\foobar_pref_vis_oscilloscope.h" />
+    <ClInclude Include="foobar\UI\foobar_pref_vis_spectrum_analyser.h" />
+    <ClInclude Include="foobar\UI\foobar_pref_vis_track_details.h" />
+    <ClInclude Include="foobar\UI\foobar_pref_vis_vu_meter.h" />
+    <ClInclude Include="foobar\UI\Resources\foo_logitech_lcd.h" />
+    <ClInclude Include="GDI_Drawable.h" />
+    <ClInclude Include="GDI_ProgressBar.h" />
+    <ClInclude Include="GDI_ProgressBar_Util.h" />
+    <ClInclude Include="GDI_Scroller.h" />
+    <ClInclude Include="GDI_Text.h" />
+    <ClInclude Include="GDI_TextFragment.h" />
+    <ClInclude Include="GDI_TextLine.h" />
+    <ClInclude Include="GL\glbuffer.h" />
+    <ClInclude Include="GL\glcommon.h" />
+    <ClInclude Include="GL\glcore.h" />
+    <ClInclude Include="GL\glerror.h" />
+    <ClInclude Include="GL\glget.h" />
+    <ClInclude Include="GL\glscopedutil.h" />
+    <ClInclude Include="GL\gltexture.h" />
+    <ClInclude Include="GL\wglcore.h" />
+    <ClInclude Include="Image.h" />
+    <ClInclude Include="Image_GDIPlus.h" />
+    <ClInclude Include="Image_ImageData.h" />
+    <ClInclude Include="Image_GDI.h" />
+    <ClInclude Include="Image_OpenGL.h" />
+    <ClInclude Include="Image_ImageLoader.h" />
+    <ClInclude Include="LCD\LCD.h" />
+    <ClInclude Include="LCD\LogitechAPI.h" />
+    <ClInclude Include="LCD\LogitechLCD.h" />
+    <ClInclude Include="logger.h" />
+    <ClInclude Include="RenderCommon.h" />
+    <ClInclude Include="Util\FlagEnum.h" />
+    <ClInclude Include="Util\InterpolateUtil.h" />
+    <ClInclude Include="Util\MemoryUtil.h" />
+    <ClInclude Include="Util\Random.h" />
+    <ClInclude Include="Util\ScopeExit.h" />
+    <ClInclude Include="Util\SequentialEnum.h" />
+    <ClInclude Include="Util\Singleton.h" />
+    <ClInclude Include="Util\TrigCache.h" />
+    <ClInclude Include="Util\TypeTraits.h" />
+    <ClInclude Include="Visualisation\Oscilloscope.h" />
+    <ClInclude Include="Visualisation\Oscilloscope_Basic.h" />
+    <ClInclude Include="Visualisation\Oscilloscope_Radial.h" />
+    <ClInclude Include="Visualisation\Oscilloscope_Util.h" />
+    <ClInclude Include="Visualisation\SpectrumAnalyser.h" />
+    <ClInclude Include="Visualisation\SpectrumAnalyser_Basic.h" />
+    <ClInclude Include="Visualisation\SpectrumAnalyser_Block.h" />
+    <ClInclude Include="Visualisation\SpectrumAnalyser_Util.h" />
+    <ClInclude Include="Visualisation\TrackDetails.h" />
+    <ClInclude Include="Visualisation\TrackDetails_Basic.h" />
+    <ClInclude Include="Visualisation\Visualisation.h" />
+    <ClInclude Include="Visualisation\Visualisation_Manager.h" />
+    <ClInclude Include="Visualisation\Visualisation_Params.h" />
+    <ClInclude Include="Visualisation\VUMeter.h" />
+    <ClInclude Include="Visualisation\VUMeter_Basic.h" />
+    <ClInclude Include="Visualisation\VUMeter_Image.h" />
+    <ClInclude Include="Visualisation\VUMeter_Util.h" />
+    <ClInclude Include="Windows\GDIPlus\GDIPlus.h" />
+    <ClInclude Include="Windows\GDIPlus\GDIPlus_Bitmap.h" />
+    <ClInclude Include="Windows\GDIPlus\GDIPlus_Error.h" />
+    <ClInclude Include="Windows\GDI\GDI.h" />
+    <ClInclude Include="Windows\GDI\GDI_Bitmap.h" />
+    <ClInclude Include="Windows\GDI\GDI_Canvas.h" />
+    <ClInclude Include="Windows\GDI\GDI_Font.h" />
+    <ClInclude Include="Windows\GDI\GDI_Util.h" />
+    <ClInclude Include="Windows\Thread\Thread_CriticalSection.h" />
+    <ClInclude Include="Windows\Thread\Thread_Worker.h" />
+    <ClInclude Include="Windows\UI\ATL_ColorSwatch.h" />
+    <ClInclude Include="Windows\UI\ATL_DialogWindow.h" />
+    <ClInclude Include="Windows\UI\ATL_EnumComboBox.h" />
+    <ClInclude Include="Windows\UI\ATL_PreferencesDialog.h" />
+    <ClInclude Include="Windows\UI\ATL_Window.h" />
+    <ClInclude Include="Windows\UI\Comm_Dialog.h" />
+    <ClInclude Include="Windows\UI\UI.h" />
+    <ClInclude Include="Windows\UI\UI_WindowClass.h" />
+    <ClInclude Include="Windows\UI\UI_WMTimer.h" />
+    <ClInclude Include="Windows\Windows_Core.h" />
+    <ClInclude Include="Windows\Windows_Error.h" />
+    <ClInclude Include="Windows\Windows_MessageQueue.h" />
+    <ClInclude Include="Windows\Windows_Param.h" />
+    <ClInclude Include="Windows\Windows_StopWatch.h" />
+    <ClInclude Include="Windows\Windows_StringUtil.h" />
+    <ClInclude Include="Windows\Windows_TimerResolution.h" />
+    <ClInclude Include="Windows\_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lgpl-2.1.lic" />
+    <None Include="README.MD" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="foobar\UI\Resources\foo_logitech_lcd.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="foo_logitech_lcd.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
