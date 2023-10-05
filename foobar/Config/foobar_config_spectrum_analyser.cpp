@@ -86,12 +86,12 @@ namespace {
 
     //-----------------------------------------------------
 
-    cfg_uint cfg_SpectrumAnalyserConfigVersion{
+    cfg_size_t cfg_SpectrumAnalyserConfigVersion{
         cfg_id_type{ 0x72232baa, 0xf103, 0x4b3e, { 0x83, 0x47, 0x7e, 0xf5, 0xce, 0x44, 0x1d, 0x9b } },
         vSpectrumAnalyserConfigVersion
     };
 
-    cfg_uint cfg_SpectrumAnalyserConfigSize{
+    cfg_size_t cfg_SpectrumAnalyserConfigSize{
         cfg_id_type{ 0xbcca8e12, 0xb8cf, 0x4ff0, { 0x82, 0xd8, 0x80, 0xfc, 0xe5, 0x5f, 0xb9, 0xad } },
         nSpectrumAnalyserConfigSize
     };

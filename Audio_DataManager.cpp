@@ -150,7 +150,8 @@ namespace Audio {
             }
             while (ch < dBChannelCount) { m_Decibel.channel_zero(ch++); }
         } else {
-            const auto dB{ dB::dBFromWavedata(samples, sampleCount, 1U) };
+            constexpr const size_type stride{ 1 };
+            const auto dB{ dB::dBFromWavedata(samples, sampleCount, stride) };
             for (size_type ch = 0; ch < dBChannelCount; ++ch) {
                 if (m_fnDecibelTransform) {
                     m_Decibel.channel_update(ch, m_fnDecibelTransform(ch, dB));

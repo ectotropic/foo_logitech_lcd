@@ -596,8 +596,8 @@ namespace {
 
     //------------------------------------------------------
 
-    cfg_uint cfg_GeneralConfigVersion{ id_GeneralConfigVersion, vGeneralConfigVersion };
-    cfg_uint cfg_GeneralConfigSize   { id_GeneralConfigSize,    nGeneralConfigSize    };
+    cfg_size_t cfg_GeneralConfigVersion{ id_GeneralConfigVersion, vGeneralConfigVersion };
+    cfg_size_t cfg_GeneralConfigSize{id_GeneralConfigSize, nGeneralConfigSize};
 } // namespace <anonymous>
 
 //==============================================================================

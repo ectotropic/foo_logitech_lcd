@@ -204,11 +204,11 @@ namespace Color {
     //**************************************************************************
     template <typename TargetT, typename SourceT>
     inline constexpr auto color_value_cast(SourceT val) noexcept {
-        using largest_t = ::util::largest_type_t<TargetT, SourceT>;
-        using float_t   = ::util::floating_point_type_t<largest_t>;
+        using largest_type = ::util::largest_type_t<TargetT, SourceT>;
+        using float_type   = ::util::floating_point_type_t<largest_type>;
 
-        using target_helper = ::Color::detail::ColorValueFloatCastT<TargetT, float_t>;
-        using source_helper = ::Color::detail::ColorValueFloatCastT<SourceT, float_t>;
+        using target_helper = ::Color::detail::ColorValueFloatCastT<TargetT, float_type>;
+        using source_helper = ::Color::detail::ColorValueFloatCastT<SourceT, float_type>;
 
         const auto inter_val{ source_helper::to_itermediate(val) };
         return target_helper::from_itermediate(inter_val);

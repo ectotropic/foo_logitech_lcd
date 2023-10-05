@@ -90,11 +90,21 @@ namespace foobar {
         abort_callback_param(abort_callback* p_callback) noexcept :
             m_callback{ p_callback } {}
 
-        abort_callback_param(const abort_callback_param& ) = default;
-        abort_callback_param(      abort_callback_param&&) = default;
+        abort_callback_param(const abort_callback_param& other) noexcept :
+            m_callback{ other.m_callback } {}
 
-        abort_callback_param& operator=(const abort_callback_param& ) = default;
-        abort_callback_param& operator=(      abort_callback_param&&) = default;
+        abort_callback_param(abort_callback_param&& other) noexcept :
+            m_callback{ std::exchange(other.m_callback, nullptr) } {}
+
+        abort_callback_param& operator=(const abort_callback_param& other) noexcept {
+            m_callback = other.m_callback;
+            return *this;
+        }
+
+        abort_callback_param& operator=(abort_callback_param&& other) noexcept {
+            m_callback = std::exchange(other.m_callback, nullptr);
+            return *this;
+        }
 
         constexpr operator abort_callback& () noexcept {
             return m_callback ? *m_callback : m_dummy;

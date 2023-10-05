@@ -1,0 +1,14 @@
+
+.vs/
+.vs/*
+bin/
+bin/*
+build/
+build/*
+dependencies/bin/
+dependencies/bin/*
+dependencies/include/
+dependencies/include/*
+dependencies/lib/
+dependencies/lib/*
+*.user

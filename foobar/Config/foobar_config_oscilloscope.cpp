@@ -118,12 +118,12 @@ namespace {
 
     //-----------------------------------------------------
 
-    cfg_uint cfg_OscilloscopeConfigVersion{
+    cfg_size_t cfg_OscilloscopeConfigVersion{
         cfg_id_type{ 0x72232baa, 0xf103, 0x4b3e, { 0x83, 0x47, 0x7e, 0xf5, 0xce, 0x44, 0x1d, 0x9b } },
         vOscilloscopeConfigVersion
     };
 
-    cfg_uint cfg_OscilloscopeConfigSize{
+    cfg_size_t cfg_OscilloscopeConfigSize{
         cfg_id_type{ 0xbcca8e12, 0xb8cf, 0x4ff0, { 0x82, 0xd8, 0x80, 0xfc, 0xe5, 0x5f, 0xb9, 0xad } },
         nOscilloscopeConfigSize
     };

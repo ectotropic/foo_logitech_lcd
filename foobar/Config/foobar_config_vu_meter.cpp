@@ -79,12 +79,12 @@ namespace {
 
     //------------------------------------------------------
 
-    cfg_uint cfg_VUMeterConfigVersion{
+    cfg_size_t cfg_VUMeterConfigVersion{
         cfg_id_type{ 0xc85d1012, 0xee65, 0x4eec, { 0x8b, 0xde, 0x6f, 0x33, 0x42, 0xc6, 0x14, 0x09 } },
         vVUMeterConfigVersion
     };
 
-    cfg_uint cfg_VUMeterConfigSize{
+    cfg_size_t cfg_VUMeterConfigSize{
         cfg_id_type{ 0x54e83096, 0xb11e, 0x43cc, { 0x9b, 0x43, 0xf8, 0x92, 0x76, 0x61, 0x6f, 0x4b } },
         nVUMeterConfigSize
     };

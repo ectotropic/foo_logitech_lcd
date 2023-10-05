@@ -68,7 +68,7 @@ namespace Visualisation::VUMeter {
         IVUMeter(visualisation_type eType,
                  const config_type& config,
                  const dimensions_type& dim) noexcept :
-            IVisualisation{ Mode(), eType, dim },
+            IVisualisation{ Mode(), static_cast<size_type>(eType), dim },
             m_Config(config) {}
 
     protected:

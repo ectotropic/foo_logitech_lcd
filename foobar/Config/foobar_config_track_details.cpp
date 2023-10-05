@@ -353,8 +353,8 @@ namespace {
 
     //------------------------------------------------------
 
-    cfg_uint cfg_PageConfigVersion{ id_PageConfigVersion, vPageConfigVersion };
-    cfg_uint cfg_PageConfigSize   { id_PageConfigSize,    nPageConfigSize    };
+    cfg_size_t cfg_PageConfigVersion{ id_PageConfigVersion, vPageConfigVersion };
+    cfg_size_t cfg_PageConfigSize   { id_PageConfigSize,    nPageConfigSize    };
 } // namespace <anonymous>
 
 //==============================================================================

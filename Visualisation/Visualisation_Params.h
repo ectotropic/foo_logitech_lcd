@@ -33,7 +33,11 @@ namespace Visualisation {
     //**************************************************************************
     struct SpectrumParams final {
     public:
+#if SIZE_MAX < UINT64_MAX
         using sample_type = float;
+#else
+        using sample_type = double;
+#endif
         using peak_type   = sample_type;
         using size_type   = std::size_t;
 
@@ -105,7 +109,11 @@ namespace Visualisation {
     //**************************************************************************
     struct WaveformParams final {
     public:
+#if SIZE_MAX < UINT64_MAX
         using sample_type = float;
+#else
+        using sample_type = double;
+#endif
         using peak_type   = sample_type;
         using size_type   = std::size_t;
 
@@ -175,7 +183,11 @@ namespace Visualisation {
     //**************************************************************************
     struct DecibelParams final {
     public:
-        using dB_type      = float;
+#if SIZE_MAX < UINT64_MAX
+        using dB_type = float;
+#else
+        using dB_type = double;
+#endif
         using decibel_type = dB_type;
         using peak_type    = dB_type;
         using size_type    = std::size_t;

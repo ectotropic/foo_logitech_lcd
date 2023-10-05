@@ -71,6 +71,9 @@ namespace util {
         static constexpr int_type  to_int (enum_type e) noexcept { return  static_cast<int_type>(e); }
         static constexpr enum_type to_enum(int_type  i) noexcept { return static_cast<enum_type>(i); }
 
+        template <typename IntT, std::enable_if_t<std::is_integral_v<IntT>, bool> = true>
+        static constexpr enum_type to_enum(IntT i) noexcept { return static_cast<enum_type>(i); }
+
         static constexpr auto begin () noexcept { return this_type(base_type::_sequential_enum_begin); }
         static constexpr auto cbegin() noexcept { return this_type(base_type::_sequential_enum_begin); }
         static constexpr auto end   () noexcept { return this_type(base_type::_sequential_enum_end); }

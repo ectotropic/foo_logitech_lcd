@@ -72,13 +72,15 @@ namespace Visualisation::Text {
                       const config_type& config,
                       const dimensions_type& dim,
                       VisualisationFlags flags) noexcept :
-            IVisualisation{ Mode(), ePage, dim, flags },
+            IVisualisation{ Mode(), static_cast<size_type>(ePage), dim, flags },
             m_Config{ config } {}
 
     protected:
         constexpr const auto& Config() const noexcept { return m_Config; }
 
-        constexpr auto GetPage() const noexcept { return page_type::to_enum(base_class::GetIndex()); }
+        constexpr auto GetPage() const noexcept {
+            return page_type::to_enum(base_class::GetIndex());
+        }
 
     private: //Copy of config
         config_type m_Config{};

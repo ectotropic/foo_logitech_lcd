@@ -79,8 +79,8 @@ namespace Visualisation::VUMeter::HorizontalSplit {
         const auto nHalfHeight = nHeight / 2;
 
         // Transformer will have converted these values to the range [0,1]
-        const auto fLevelL = AudioDataManager.GetDB(Audio::Channel::Left,  fInterp) * fWidth;
-        const auto fLevelR = AudioDataManager.GetDB(Audio::Channel::Right, fInterp) * fWidth;
+        const auto fLevelL = static_cast<float>(AudioDataManager.GetDB(Audio::Channel::Left,  fInterp)) * fWidth;
+        const auto fLevelR = static_cast<float>(AudioDataManager.GetDB(Audio::Channel::Right, fInterp)) * fWidth;
 
         const auto fBarLengthL = std::max(0.0f, std::min(fWidth, fLevelL));
         const auto fBarLengthR = std::max(0.0f, std::min(fWidth, fLevelR));
@@ -176,8 +176,8 @@ namespace Visualisation::VUMeter::HorizontalSplit {
         const auto nHalfHeight = nHeight / 2;
 
         // Transformer will have converted these values to the range [0,1]
-        const auto fLevelL = AudioDataManager.GetDB(Audio::Channel::Left,  fInterp) * fWidth;
-        const auto fLevelR = AudioDataManager.GetDB(Audio::Channel::Right, fInterp) * fWidth;
+        const auto fLevelL = static_cast<float>(AudioDataManager.GetDB(Audio::Channel::Left,  fInterp)) * fWidth;
+        const auto fLevelR = static_cast<float>(AudioDataManager.GetDB(Audio::Channel::Right, fInterp)) * fWidth;
 
         const auto fBarLengthL = std::max(0.0f, std::min(fWidth, fLevelL));
         const auto fBarLengthR = std::max(0.0f, std::min(fWidth, fLevelR));
@@ -334,8 +334,8 @@ namespace Visualisation::VUMeter::VerticalSplit {
         const auto nHeight = canvasSize.cy;
 
         // Transformer will have converted these values to the range [0,1]
-        const auto fLevelL = AudioDataManager.GetDB(Audio::Channel::Left,  fInterp) * fHalfWidth;
-        const auto fLevelR = AudioDataManager.GetDB(Audio::Channel::Right, fInterp) * fHalfWidth;
+        const auto fLevelL = static_cast<float>(AudioDataManager.GetDB(Audio::Channel::Left,  fInterp)) * fHalfWidth;
+        const auto fLevelR = static_cast<float>(AudioDataManager.GetDB(Audio::Channel::Right, fInterp)) * fHalfWidth;
 
         const auto fBarLengthL = std::max(0.0f, std::min(fHalfWidth, fLevelL));
         const auto fBarLengthR = std::max(0.0f, std::min(fHalfWidth, fLevelR));
@@ -430,8 +430,8 @@ namespace Visualisation::VUMeter::VerticalSplit {
         const auto color1{ ColorUnpacker::Unpack<::Color::Color3f>(Config().m_Color.m_Palette.Secondary) };
 
         // Transformer will have converted these values to the range [0,1]
-        const auto fLevelL = AudioDataManager.GetDB(Audio::Channel::Left,  fInterp) * fHalfWidth;
-        const auto fLevelR = AudioDataManager.GetDB(Audio::Channel::Right, fInterp) * fHalfWidth;
+        const auto fLevelL = static_cast<float>(AudioDataManager.GetDB(Audio::Channel::Left,  fInterp)) * fHalfWidth;
+        const auto fLevelR = static_cast<float>(AudioDataManager.GetDB(Audio::Channel::Right, fInterp)) * fHalfWidth;
 
         const auto fBarLengthL = std::max(0.0f, std::min(fHalfWidth, fLevelL));
         const auto fBarLengthR = std::max(0.0f, std::min(fHalfWidth, fLevelR));

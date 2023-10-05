@@ -122,9 +122,9 @@ namespace Image {
     //**************************************************************************
     // ImageLoader
     //**************************************************************************
-    ImageData::Compact ImageLoader::Load(const void* pData,
-                                                        size_type byteSize) {
-        auto stream = IStreamPtr_t{ ::SHCreateMemStream(static_cast<const BYTE*>(pData), byteSize) };
+    ImageData::Compact ImageLoader::Load(const void* pData, size_type byteSize) {
+        auto stream = IStreamPtr_t{ ::SHCreateMemStream(static_cast<const BYTE*>(pData),
+                                                        static_cast<UINT>(byteSize)) };
         auto bitmap = Bitmap_t{ stream };
         WinGDIPlusAssertStatus(bitmap);
         return ::GDIPlusLoadImage(bitmap);

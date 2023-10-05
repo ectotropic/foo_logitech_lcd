@@ -250,7 +250,7 @@ void VisualisationManager::InitialiseVisualisations() {
     }
 
     m_bHaveVisualisations = (modeActiveCount > 0);
-    m_MaxVisIndex         = visMaxIndex;
+    m_MaxVisIndex         = static_cast<random_value_type>(visMaxIndex);
 
     //Set and activate the chosen visualisation
     if (m_eCurrentVisMode == VisualisationMode::ModeError) {
