@@ -303,7 +303,7 @@ namespace Audio {
         }
 
         constexpr void SetPlaybackTime(duration_type current) noexcept {
-            m_fTrackTime   = current;
+            m_fTrackTime = current;
         }
 
         void SetTrackDetails(const track_details_pages& details) noexcept {

@@ -300,9 +300,9 @@ namespace {
 //******************************************************************************
 //******************************************************************************
 #if (defined(DEBUG) || defined(_DEBUG)) && !defined(NDEBUG)
-#	define VERSION_STR "1.0.0 (Resurrection) [DEVELOPEMENT VERSION - DO NOT DISTRIBUTE]"
+#	define VERSION_STR "1.0.2 (Resurrection) [DEVELOPEMENT VERSION - DO NOT DISTRIBUTE]"
 #else
-#	define VERSION_STR "1.0.0 (Resurrection)"
+#	define VERSION_STR "1.0.2 (Resurrection)"
 #endif
 
 #ifndef _PREFAST_
@@ -322,11 +322,18 @@ For all versions of the component, the dynamic library (.dll) is distributed \
 under the Boost Software License: (http://www.boost.org/LICENSE_1_0.txt)\n\
 \n\
 The source code for the component is available from \
-https://github.com/ectotropic and is distributed under the GNU Lesser General \
-Public License.\n\
+https://github.com/ectotropic/foo_logitech_lcd and is distributed under the \
+GNU Lesser General Public License.\n\
 \n\
 Version History\n\
 ===============\n\
+\n\
+1.0.2 (Resurrection)\n\
+    * Fix for progress bar not tracking progress.\n\
+\n\
+1.0.1 (Resurrection)\n\
+    * Update to latest foobar2000 SDK.\n\
+    * Now supports both 32-bit and 64-bit versions.\n\
 \n\
 1.0.0 (Resurrection) - Open Sourced\n\
     * New comprehensively updated version, finally released as Open Source.\n\

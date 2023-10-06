@@ -108,7 +108,7 @@ namespace Windows::GDI {
 
             constexpr bool Current(_In_ float fCurrent) noexcept {
                 if (m_fCurrent == fCurrent) { return false; }
-                m_fCurrent = std::max(std::min(fCurrent, Start()), Finish());
+                m_fCurrent = std::min(std::max(fCurrent, Start()), Finish());
                 return true;
             }
 

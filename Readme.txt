@@ -1,15 +1,15 @@
 foo_logitech_lcd Readme
 =======================
 
+A foobar2000 component enabling track information and visualisations to be
+displayed on a range of Logitech LCD products.
+
 This component, and all previous versions, are distributed under the Boost
 Software License: (http://www.boost.org/LICENSE_1_0.txt)
 
-Please refrain from providing direct links to specific downloads of this
-software, if you wish to link to the software you may link to the forum topic
-as noted in the contact section, or the main foobar2000 component page.
-
-If you have problems with this component, please use the contact information
-at the end of this document.
+The source code for the component is available at
+https://github.com/ectotropic/foo_logitech_lcd and is distributed under the
+GNU Lesser General Public License.
 
 Contents
 ========
@@ -35,10 +35,8 @@ Hardware:
         - Logitech Z-10 Speakers
         - Dell XPS Laptops with built in G15 LCD (e.g. M1730)
     * The G13 Gamepad and Dell Laptops have not yet been verified as working
-    * Additional products may also work
-        - any Logitech hardware that uses the Logitech LCD Manager software
-          should be compatible
-        - if you find a product that works and is not listed, please report it
+    * Additional products may also work (any Logitech hardware that uses the
+      Logitech LCD Manager software should be compatible)
     * Note that the Z-10 Speakers and Dell Laptops require newer software than
       the available drivers provide. While it is possible to update the software
       by using downloads not specifically intended for the given hardware (see
@@ -56,37 +54,8 @@ Hardware:
           difficulties with the drivers recommended above, they should use the
           contact info at the end of this document or contact Logitech directly
 
-Software:
-    * Windows XP+
-    * foobar2000 v1.0.0+ (http://www.foobar2000.org/?page=Download) (version of
-      this component prior to v0.5.0 support foobar2000 v0.9.5.2+)
-    * Latest drivers (Logitech Gamepanel/LCD Manager v3+ required)
-      (http://www.logitech.com/index.cfm/support_downloads/downloads/)
-
-To install, simply place the DLL in the components directory of foobar (by
-default this is "C:\Program Files (x86)\foobar2000\components" in 64bit Windows
-and "C:\Program Files\foobar2000\components" in 32bit Windows)
-
-If it fails to run, then you might also need:
-    * GDI+ (v1.1+, note that this comes as standard with Windows XP and above)
-     (http://www.microsoft.com/downloads/details.aspx?FamilyID=6a63ab9c-df12-4d41-933c-be590feaa05a&displaylang=en)
-
-Although it should no longer be required if you get errors mentioning DLL
-configuration or windows side by side configuration, you might need this:
-    * Microsoft Visual C++ 2008 Re-distributable Package
-    (http://www.microsoft.com/downloads/details.aspx?FamilyID=a5c84275-3b97-4ab7-a40d-3802b2af5fc2&displaylang=en)
-
-If you have any trouble running it, check the console for any information -
-errors may appear there.
-If you have foo_g15lcd installed you must remove it before installing this (both
-cannot be used together)
-If all else fails use the contact details below to ask for help! Please state
-what version of operating system, foobar, component and logitech drivers you
-are using.
-Due to lack of drivers this component is not supported on Windows versions prior
-to XP, though it may work fine.
-Linux/WINE users are similarly unsupported.
-Support is only given for the latest version of the component.
+If you have any trouble running it, check the foobar2000 console, errors should
+appear there.
 
 2. Options
 ==========
@@ -136,18 +105,12 @@ Additional Notes:
 * Options not applicable to a given setup are disabled - colour options are
   never available for VU Meter foobar
 * Size 8 font allows for 4 lines of text on Monochrome displays
-* If you move from a version prior to v0.2 to v0.2 or greater most of your
-  settings will be migrated, however if you then return to a prior version
-  any changes will be lost
-    - Some settings cannot be migrated from previous versions (e.g. font size).
 * Time display font size is coupled to Progress bar size
     - Time font is Arial if installed, or the system menu font otherwise
-* If you need a quick performance boost on your PC, switch to Track Info mode
-  as it requires significantly less processing power than the alternative modes.
 * Hardware acceleration may cause issues with some setups - if you have any
   problems with the component, try disabling this. Note that hardware
   acceleration does not necessarily mean better performance, but some effects
-  are not available without it.
+  may not be available without it.
 
 3. Controls
 ===========
@@ -167,6 +130,22 @@ effect (Monochrome) or will move directly to the next active group (Colour)
 
 4. Version History
 ==================
+
+1.0.2 (Resurrection) - Minor Update
+    * [FIXED]	Fix for progress bar not tracking progress.
+
+1.0.1 (Resurrection) - Minor Update
+    * [CHANGED]	updated to latest foobar2000 SDK (2023-09-23).
+    * [NEW]		Now supports both 32-bit and 64-bit versions.
+
+1.0.0 (Resurrection) - Open Sourced
+    * [NEW]		comprehensively updated version, finally released as Open Source.
+    * [FIXED]	Fixed many bugs and issues.
+    * [CHANGED]	Improved accuracy and correctness of many calculations.
+    * [CHANGED]	Improved general performance and robustness.
+    * [CHANGED]	Removed dependence on multiple external libraries.
+    * [CHANGED]	Updated to more modern external libraries where possible.
+    * [NOTE]	Settings will **not** migrate from previous versions.
 
 0.5.5 - Minor Update
     * [FIXED]	Crash on exit
@@ -299,34 +278,10 @@ effect (Monochrome) or will move directly to the next active group (Colour)
 
 0.1.0 - First Release
 
-5. To Do
-========
-
-* [Internal] Tidy code ready for source code release
-* [Internal] Fix known timing issues
-* [Internal] Optimise!
-* Expose more options
-* Add:
-    * Windows SideShow support
-    * more visualisations
-    * more control over colour gradients
-    * ability to choose what visualisations go on what keys
-    * ability to show track info AND visualisations
-    * lyrics support
-    * support for %playback_time%, %playback_time_seconds%, %playback_time_remaining_seconds%
-    * Style support (set colours/options via style presets that can be user created)
-    * Transparency support (colour)
-    * Album art as part of a page (instead of the background)
-
-Support for other Logitech LCD products (not using the LCD Manager) is not possible due to lack of an SDK. Despite repeated requests for something to allow such support, Logitech continue to refuse.
-Support for other media players *could* be possible, but requires full SDK support from those players.
-
 6. Bugs & Issues
 ================
 
-* Potential timing issues with internal clocks
-* Possible to set options at such a time that display stops updating (fixable by exiting and restarting foobar)
-* Visualisations pause rather than stop when track is paused or stopped
+* May be possible to set options at such a time that display stops updating (fixable by exiting and restarting foobar)
 * If you move from a colour display to a monochrome display the colour settings will mess the monochrome display up (remedied by deleting all options)
 
 7. Credits
@@ -345,8 +300,6 @@ Everything else designed and written by ectotropic.
 
 Thanks to the HydrogenAudio community for help with testing/bug fixing (special
 thanks go to ragganiczu & razor99).
-
-Tested with Windows 7 x64, foobar2000 v1.0.0 and G15 LCD Gamepanel v3.04.137
 
 8. Contact
 ==========
